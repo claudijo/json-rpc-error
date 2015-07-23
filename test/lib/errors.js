@@ -22,7 +22,7 @@ describe('JSON RPC 2.0 Error', function() {
   });
 
   it('should create base JSON RPC error without using `new` keyword', function () {
-    var err = new JsonRpcError.JsonRpcError(message, code, data);
+    var err = JsonRpcError.JsonRpcError(message, code, data);
     assert(err instanceof JsonRpcError.JsonRpcError);
   });
 
