@@ -83,6 +83,16 @@ in the range -32000 to -32099.
 new JsonRpcError.InternalError(<code>);
 ```
 
+## Test
+
+Run unit tests;
+
+`$ npm test`
+
+Create test coverage report:
+
+`$ npm run-script test-cov`
+
 # License
 
 [MIT](LICENSE)

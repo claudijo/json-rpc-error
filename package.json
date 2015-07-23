@@ -4,7 +4,8 @@
   "description": "JSON RPC 2.0 Errors.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --check-leaks --reporter spec --bail ./test --recursive --watch"
+    "test": "./node_modules/mocha/bin/mocha --check-leaks --reporter spec --bail ./test --recursive --watch",
+    "test-cov": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks ./test --recursive"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "index.js"
   ],
   "devDependencies": {
+    "istanbul": "^0.3.17",
     "mocha": "^2.2.5"
   }
 }
