@@ -85,7 +85,7 @@ new JsonRpcError.InternalError(<code>);
 
 ## Test
 
-Run unit tests;
+Run unit tests:
 
 `$ npm test`
 
