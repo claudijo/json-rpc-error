@@ -21,14 +21,14 @@ Each error can be constructed with or without the `new` keyword, for example
 
 ## Usage
 
-Import JSON RPC 2.0 error module:
+Import the JSON RPC 2.0 error module:
 
 ```js
 var JsonRpcError = require('json-rpc-error');
 ```
 
 ### JsonRpcError
-Base constructor for more specific JSON RPC 2 errors:
+General base constructor for JSON RPC 2 errors:
 
 ```js
 new JsonRpcError.JsonRpcError(<message>,<code>,[<data>]);
@@ -63,8 +63,8 @@ new JsonRpcError.InvalidParams();
 ```
 
 ### Internal error
-Internal JSON-RPC error. Constructor takes optional error object, in which case
-the error's `message` property will be passed on.
+Internal JSON-RPC error. The constructor can take an optional error object, in
+which case the error's `message` property will be passed on.
 
 ```js
 new JsonRpcError.InternalError(<error>);
@@ -75,7 +75,11 @@ Reserved for implementation-defined server-errors. Provided error code must be
 in the range -32000 to -32099.
 
 ```js
-new JsonRpcError.InternalError(code);
+new JsonRpcError.InternalError(<code>);
 ```
+
+# License
+
+[MIT](LICENSE)
 
 
