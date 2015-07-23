@@ -36,7 +36,7 @@ var JsonRpcError = require('json-rpc-error');
 General base constructor for JSON RPC 2 errors:
 
 ```js
-new JsonRpcError.JsonRpcError(<message>,<code>,[<data>]);
+new JsonRpcError.JsonRpcError(message, code[, data]);
 ```
 
 ### Parse error
@@ -72,7 +72,7 @@ Internal JSON-RPC error. The constructor can take an optional error object, in
 which case the error's `message` property will be passed on.
 
 ```js
-new JsonRpcError.InternalError(<error>);
+new JsonRpcError.InternalError([error]);
 ```
 
 ### Server Error
@@ -80,7 +80,7 @@ Reserved for implementation-defined server-errors. Provided error code must be
 in the range -32000 to -32099.
 
 ```js
-new JsonRpcError.InternalError(<code>);
+new JsonRpcError.InternalError(code);
 ```
 
 ## Test
