@@ -4,7 +4,7 @@
   "description": "JSON RPC 2.0 Errors.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --check-leaks --reporter spec --bail ./test --recursive --watch"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "files": [
     "LICENSE",
     "index.js"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
 }
