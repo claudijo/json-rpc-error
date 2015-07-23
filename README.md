@@ -1,6 +1,6 @@
 # JSON RPC 2.0 Error
 
-Error constructors for JSON RPC 2 errors as described in the
+Error constructors for JSON RPC 2.0 errors as described in the
 [JSON-RPC 2.0 Error Specification]
 (http://www.jsonrpc.org/specification#error_object)
 
