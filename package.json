@@ -1,0 +1,27 @@
+{
+  "name": "json-rpc-error",
+  "version": "0.0.1",
+  "description": "JSON RPC 2 Errors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claudijo/json-rpc-error"
+  },
+  "keywords": [
+    "JSON",
+    "RPC",
+    "error"
+  ],
+  "author": "Claudijo Borovic <hello@claudijo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inherits": "^2.0.1"
+  },
+  "files": [
+    "LICENSE",
+    "index.js"
+  ]
+}
