@@ -17,7 +17,12 @@ Specific errors are instances of the base constructor `JsonRpcError`, which in
 turn is an instance of the native JavaScript Error object.
 
 Each error can be constructed with or without the `new` keyword, for example
-`var err = new JsonRpcError.ParseError();` is the same as `var err = JsonRpcError.ParseError();`
+
+`var err = new JsonRpcError.ParseError();`
+
+is the same as
+
+`var err = JsonRpcError.ParseError();`
 
 ## Usage
 
