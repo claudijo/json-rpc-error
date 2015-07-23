@@ -1,7 +1,7 @@
 {
   "name": "json-rpc-error",
   "version": "0.0.1",
-  "description": "JSON RPC 2 Errors.",
+  "description": "JSON RPC 2.0 Errors.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
