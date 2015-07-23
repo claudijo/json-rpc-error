@@ -18,6 +18,10 @@
   ],
   "author": "Claudijo Borovic <hello@claudijo.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudijo/json-rpc-error/issues"
+  },
+  "homepage": "https://github.com/claudijo/json-rpc-error",
   "dependencies": {
     "inherits": "^2.0.1"
   },
