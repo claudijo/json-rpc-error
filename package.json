@@ -27,7 +27,8 @@
   },
   "files": [
     "LICENSE",
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "devDependencies": {
     "istanbul": "^0.3.17",
