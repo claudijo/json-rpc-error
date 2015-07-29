@@ -1,6 +1,6 @@
 {
   "name": "json-rpc-error",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSON RPC 2.0 Errors.",
   "main": "index.js",
   "scripts": {
