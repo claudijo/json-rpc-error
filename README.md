@@ -24,6 +24,10 @@ is the same as
 
 `var err = JsonRpcError.ParseError();`
 
+Also see related packages [json-rpc-response](https://github.com/claudijo/json-rpc-response),
+[json-rpc-request](https://github.com/claudijo/json-rpc-request), and
+[json-rpc-notification](https://github.com/claudijo/json-rpc-notification)
+
 ## Usage
 
 Import the JSON RPC 2.0 error module:
