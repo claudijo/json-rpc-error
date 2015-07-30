@@ -84,7 +84,7 @@ Reserved for implementation-defined server-errors. Provided error code must be
 in the range -32000 to -32099.
 
 ```js
-new JsonRpcError.InternalError(code);
+new JsonRpcError.ServerError(code);
 ```
 
 ## Test
