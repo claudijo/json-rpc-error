@@ -8,26 +8,26 @@ describe('JSON RPC 2.0 Error', function() {
   var data = {some: 'data'};
 
   it('should create base JSON RPC error', function () {
-    var err = new JsonRpcError.JsonRpcError(message, code, data);
+    var err = new JsonRpcError(message, code, data);
     assert(err.message === message);
     assert(err.code === code);
     assert(err.data === data);
   });
 
   it('should create base JSON RPC error without data member', function () {
-    var err = new JsonRpcError.JsonRpcError(message, code);
+    var err = new JsonRpcError(message, code);
     for (var prop in err) {
       assert(prop !== 'data');
     }
   });
 
   it('should create base JSON RPC error without using `new` keyword', function () {
-    var err = JsonRpcError.JsonRpcError(message, code, data);
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    var err = JsonRpcError(message, code, data);
+    assert(err instanceof JsonRpcError);
   });
 
   it('should create base JSON RPC error as instance of native error', function () {
-    var err = new JsonRpcError.JsonRpcError(message, code, data);
+    var err = new JsonRpcError(message, code, data);
     assert(err instanceof Error);
   });
 
@@ -44,7 +44,7 @@ describe('JSON RPC 2.0 Error', function() {
 
   it('should create parse error as instance of base JSON RPC error', function () {
     var err = JsonRpcError.ParseError();
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    assert(err instanceof JsonRpcError);
   });
 
   it('should create invalid request error', function () {
@@ -60,7 +60,7 @@ describe('JSON RPC 2.0 Error', function() {
 
   it('should create invalid request error as instance of base JSON RPC error', function () {
     var err = JsonRpcError.InvalidRequest();
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    assert(err instanceof JsonRpcError);
   });
 
   it('should create method not found error', function () {
@@ -76,7 +76,7 @@ describe('JSON RPC 2.0 Error', function() {
 
   it('should create method not found error as instance of base JSON RPC error', function () {
     var err = JsonRpcError.MethodNotFound();
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    assert(err instanceof JsonRpcError);
   });
 
   it('should create invalid params error', function () {
@@ -92,7 +92,7 @@ describe('JSON RPC 2.0 Error', function() {
 
   it('should create invalid params error as instance of base JSON RPC error', function () {
     var err = JsonRpcError.InvalidParams();
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    assert(err instanceof JsonRpcError);
   });
 
   it('should create internal error', function () {
@@ -118,7 +118,7 @@ describe('JSON RPC 2.0 Error', function() {
 
   it('should create internal error as instance of base JSON RPC error', function () {
     var err = JsonRpcError.InternalError();
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    assert(err instanceof JsonRpcError);
   });
 
   it('should create server error', function () {
@@ -158,6 +158,6 @@ describe('JSON RPC 2.0 Error', function() {
 
   it('should create server error as instance of base JSON RPC error', function () {
     var err = new JsonRpcError.ServerError(-32000);
-    assert(err instanceof JsonRpcError.JsonRpcError);
+    assert(err instanceof JsonRpcError);
   });
 });

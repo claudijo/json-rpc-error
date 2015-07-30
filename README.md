@@ -40,7 +40,7 @@ var JsonRpcError = require('json-rpc-error');
 General base constructor for JSON RPC 2 errors:
 
 ```js
-new JsonRpcError.JsonRpcError(message, code[, data]);
+new JsonRpcError(message, code[, data]);
 ```
 
 ### Parse error
